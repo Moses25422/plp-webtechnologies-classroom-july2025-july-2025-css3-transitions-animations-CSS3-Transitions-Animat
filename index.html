@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wk 7 WEB Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS & JavaScript Animation Demo</h1>
+            <p>This project demonstrates CSS transitions, keyframe animations, and JavaScript animation triggers</p>
+        </header>
+        
+        <!-- Part 1: CSS Animations -->
+        <section class="section">
+            <h2>Part 1: CSS3 Transitions and Animations</h2>
+            <p>These animations are created using pure CSS with transitions and keyframes.</p>
+            
+            <div class="animation-demo">
+                <button class="transition-btn">Hover Me (Transition)</button>
+                
+                <div class="box pulse">Pulse Animation</div>
+                
+                <div class="box slide-in">Slide In Animation</div>
+                
+                <div class="box spin">Spin Animation</div>
+            </div>
+        </section>
+        
+        <!-- Part 2: JavaScript Functions -->
+        <section class="section">
+            <h2>Part 2: JavaScript Functions — Scope, Parameters & Return Values</h2>
+            <p>This section demonstrates JavaScript functions with parameters, return values, and scope awareness.</p>
+            
+            <div class="animation-controls">
+                <button class="control-btn" onclick="calculateArea()">Calculate Area</button>
+                <button class="control-btn" onclick="changeColor()">Change Color</button>
+                <button class="control-btn" onclick="startCounter()">Start Counter</button>
+            </div>
+            
+            <div id="output" style="padding: 15px; background: rgba(255,255,255,0.1); border-radius: 8px; margin-top: 15px;">
+                Output will appear here...
+            </div>
+        </section>
+        
+        <!-- Part 3: Combined Animations -->
+        <section class="section">
+            <h2>Part 3: Combining CSS Animations with JavaScript</h2>
+            <p>These animations are triggered by JavaScript through class additions and removals.</p>
+            
+            <div class="triggered-animations">
+                <div class="animation-controls">
+                    <button class="control-btn" onclick="triggerAnimation('bounce')">Bounce</button>
+                    <button class="control-btn" onclick="triggerAnimation('shake')">Shake</button>
+                    <button class="control-btn" onclick="triggerAnimation('flip')">Flip</button>
+                    <button class="control-btn" onclick="stopAnimations()">Stop Animations</button>
+                </div>
+                
+                <div class="animation-target">
+                    <div class="target-item" id="animatedElement">Animate Me!</div>
+                </div>
+                
+                <h3>Card Flip Demo</h3>
+                <p>Click the card to flip it (triggered by JavaScript)</p>
+                
+                <div class="card-container">
+                    <div class="card" id="flipCard" onclick="flipCard()">
+                        <div class="card-front">Front</div>
+                        <div class="card-back">Back</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
